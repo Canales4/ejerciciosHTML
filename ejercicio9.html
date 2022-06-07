@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="https://formsubmit.co/canaleslinaresjuancarlos@gmail.com" method="post">
+        Nombre: <input  type="text" 
+                        name="nom" 
+                        minlength="3"
+                        pattern="[a-zA-Z]*" 
+                        required><br>
+
+        Apellidos: <input   type="text" 
+                            name="ape"
+                            pattern="([A-Za-z]+)\s([A-Za-z]+)$"
+                            required><br>
+
+        Email: <input   type="email" 
+                        name="ema" 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        required><br>
+
+        Fecha nacimiento: <input type="datetime-local" 
+                                 name="dat"><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
